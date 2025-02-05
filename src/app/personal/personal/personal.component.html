@@ -1,0 +1,81 @@
+<div class="personal-info-container">
+    <div class="main-personal-info">
+        <div class="left-side">
+            <div class="left-side-header">
+                <div class="button-mac">
+                    <img src="/assets/images/close-icon.png" class="button-icon">
+                </div>
+                <div class="button-mac yellow-button">
+                    <img src="/assets/images/subtract-icon.png" class="button-icon">
+                </div>
+                <div class="button-mac green-button">
+                    <img src="/assets/images/full-screen-icon.png" class="button-icon" (click)="fulllscreen()">
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="header-right-side">
+                <img src="/assets/images/dhruv-panchal.jpeg" alt="Dhruv Panchal Profile" class="my-image">
+            </div>
+            <div class="right-side-main">
+                <div id="about" class="about-container">
+                    <div>
+                        <h1>Dhruv Panchal</h1>
+                        <p class="about-text">
+                            Passionate about pursuing a career in Machine Learning/AI engineering, driven by a deep fascination
+                            for the potential of intelligent systems. Eager to apply theoretical knowledge to real-world challenges
+                            and contribute to innovative solutions.
+                        </p>
+                        <a target="_blank" href="mailto:d.r.panchal029@gmail.com">
+                            <button class="content-button">
+                                Contact Me
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="skills" class="box-container">
+                    <h4 class="box-headr">My Skills</h4>
+                    <div class="main-skills">
+                        <div class="skill-container" *ngFor="let skill of ['Python', 'Django', 'NLP', 'Machine Learning', 'Deep Learning', 'SEO', 'MySQL', 'MongoDB']">
+                            <div class="skill-detail">
+                                <p class="item-name">{{ skill }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="box-container">
+                    <h4 class="box-headr">My Education</h4>
+                    <div class="main-education">
+                        <div class="edu-container">
+                            <p><strong>Master of Computer Applications (MCA)</strong><br>UKA TARSADIA UNIVERSITY, BARDOLI (July 2024 - Present)</p>
+                            <p><strong>Bachelor of Computer Applications (BCA)</strong><br>UKA TARSADIA UNIVERSITY, BARDOLI (May 2023) - CGPA: 6.06/10</p>
+                            <p><strong>12th</strong><br>GUJARAT SECONDARY AND HIGHER SECONDARY EDUCATION BOARD (2020) - Percentile Rank: 51.2</p>
+                            <p><strong>10th</strong><br>GUJARAT SECONDARY AND HIGHER SECONDARY EDUCATION BOARD (2018) - Percentile Rank: 63.08</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="box-container">
+                    <h4 class="box-headr">My Projects</h4>
+                    <div class="main-projects">
+                        <div class="project-box">
+                            <div>
+                                <h3>Job Portal with Resume Analyzer</h3>
+                                <p class="project-detail">
+                                    An innovative platform that optimizes resumes, provides personalized improvement suggestions,
+                                    and matches users' skills with relevant job opportunities. By offering effective insights into skill
+                                    development, the system makes the job search experience more efficient and tailored to specific needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact" class="box-container">
+                    <h4 class="box-headr">Contact</h4>
+                    <p>Email: <a href="mailto:d.r.panchal029@gmail.com">d.r.panchal029@gmail.com</a></p>
+                    <p>Phone: 7878070080</p>
+                    <p>Languages: English, Gujarati, Hindi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
